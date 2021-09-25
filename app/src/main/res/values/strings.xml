@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Urban Juara</string>
+    <string name="user_name">Username</string>
+    <string name="masukkan_username">Masukkan Username</string>
+    <string name="password">Password</string>
+    <string name="masukkan_password">Masukan Password</string>
+    <string name="masuk">Masuk</string>
+    <string name="lupa_password">Lupa Password</string>
+    <string name="pengguna_baru">Pengguna Baru? Buat Akun</string>
+    <string name="mebuat_akun">Membuat Akun Pengguna Baru</string>
+    <string name="nomor_hp">Nomor HP</string>
+    <string name="contoh_nomor">Cth. +6281331723XXX</string>
+    <string name="persyaratan">Saya menyetujui syarat dan ketentuan aplikasi Urban Juara</string>
+    <string name="daftar">Daftar</string>
 </resources>
