@@ -1,4 +1,4 @@
-package com.kakapo.kotlin.urbanjuara.fragment
+package com.kakapo.kotlin.urbanjuara.fragment.home
 
 import androidx.lifecycle.ViewModel
 

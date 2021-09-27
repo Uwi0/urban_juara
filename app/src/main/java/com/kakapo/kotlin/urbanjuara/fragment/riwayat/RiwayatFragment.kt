@@ -1,4 +1,4 @@
-package com.kakapo.kotlin.urbanjuara.fragment
+package com.kakapo.kotlin.urbanjuara.fragment.riwayat
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.kakapo.kotlin.urbanjuara.R
 
-class HomeFragment : Fragment() {
+class RiwayatFragment : Fragment() {
 
     companion object {
-        fun newInstance() = HomeFragment()
+        fun newInstance() = RiwayatFragment()
     }
 
-    private lateinit var viewModel: HomeViewModel
+    private lateinit var viewModel: RiwayatViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.home_fragment, container, false)
+        return inflater.inflate(R.layout.riwayat_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(RiwayatViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

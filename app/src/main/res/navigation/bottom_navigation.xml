@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/menu_home">
+
+    <fragment
+        android:id="@+id/menu_home"
+        android:name="com.kakapo.kotlin.urbanjuara.fragment.home.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/menu_profile"
+        android:name="com.kakapo.kotlin.urbanjuara.fragment.profile.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" />
+    <fragment
+        android:id="@+id/menu_riwayat"
+        android:name="com.kakapo.kotlin.urbanjuara.fragment.riwayat.RiwayatFragment"
+        android:label="riwayat_fragment"
+        tools:layout="@layout/riwayat_fragment" />
+</navigation>

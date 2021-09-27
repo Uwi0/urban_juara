@@ -14,4 +14,8 @@
     <string name="daftar">Daftar</string>
     <string name="hai_home">Hai, Urban Juara</string>
     <string name="text_saldo">Saldo point anda</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_riwayat">Riwayat</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_settings">Settings</string>
 </resources>
