@@ -12,4 +12,6 @@
     <string name="contoh_nomor">Cth. +6281331723XXX</string>
     <string name="persyaratan">Saya menyetujui syarat dan ketentuan aplikasi Urban Juara</string>
     <string name="daftar">Daftar</string>
+    <string name="hai_home">Hai, Urban Juara</string>
+    <string name="text_saldo">Saldo point anda</string>
 </resources>
