@@ -18,4 +18,10 @@
     <string name="menu_riwayat">Riwayat</string>
     <string name="menu_profile">Profile</string>
     <string name="menu_settings">Settings</string>
+    <string name="riwayat_transaksi">Riwayat Transaksi</string>
+    <string name="point_masuk">Point Masuk</string>
+    <string name="point_keluar">Point Keluar</string>
+    <string name="tanggal">12 Jul 2021</string>
+    <string name="point">+10</string>
+    <string name="profile">Profile</string>
 </resources>
