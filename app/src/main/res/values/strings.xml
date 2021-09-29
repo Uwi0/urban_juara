@@ -24,4 +24,13 @@
     <string name="tanggal">12 Jul 2021</string>
     <string name="point">+10</string>
     <string name="profile">Profile</string>
+    <string name="nama_depan">Nama Depan</string>
+    <string name="nama_belakang">Nama Belakang</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="email">E-mail</string>
+    <string name="bergabung">Bergabung Sejak</string>
+    <string name="ubah_profile">Ubah Profile</string>
+    <string name="saldo_point">Saldo Point Anda</string>
+    <string name="berlaku">Berlaku Sampai</string>
+    <string name="home_point">1100</string>
 </resources>
