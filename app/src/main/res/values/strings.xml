@@ -35,6 +35,20 @@
     <string name="home_point">1100</string>
     <string name="tukar_poin">Tukar Point</string>
     <string name="lokasi_bank">Lokasi Bank Sampah</string>
-    <string name="kenali_sampah">Kenali Sampahmu</string>
+    <string name="kenali_sampah">Kenali Sampah</string>
     <string name="website">Website</string>
+    <string name="tukar_point_mu_dengan">Tukar Pointmu Dengan</string>
+    <string name="tukar_poinmu">Tukar Pointmu Dengan</string>
+    <string name="vc_ojek">Voucher Ojek Online</string>
+    <string name="vc_tempat_makan">Tempat makan</string>
+    <string name="vc_spbu">Voucher SPBU</string>
+    <string name="vc_parkir">Voucher Parkir</string>
+    <string name="vc_laundry">Voucher Laundry</string>
+    <string name="vc_belanja">Voucher Belanja</string>
+    <string name="s_dan_k">S&amp;K berlaku</string>
+    <string name="ojek_5km">Ojek 5 KM</string>
+    <string name="ojek_10km">Ojek 10 KM</string>
+    <string name="text_poin">poin</string>
+    <string name="poin_ojek">50</string>
+    <string name="tukar_poin_dengan">Tukar Poin dengan</string>
 </resources>
