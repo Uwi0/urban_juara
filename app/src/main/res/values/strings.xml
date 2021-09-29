@@ -33,4 +33,8 @@
     <string name="saldo_point">Saldo Point Anda</string>
     <string name="berlaku">Berlaku Sampai</string>
     <string name="home_point">1100</string>
+    <string name="tukar_poin">Tukar Point</string>
+    <string name="lokasi_bank">Lokasi Bank Sampah</string>
+    <string name="kenali_sampah">Kenali Sampahmu</string>
+    <string name="website">Website</string>
 </resources>
