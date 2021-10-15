@@ -10,22 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UrbanJuara.noActionBar">
         <activity
-            android:name=".DaftarActivity"
+            android:name=".ui.DaftarActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".ui.splash.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="true">
         </activity>
     </application>
 

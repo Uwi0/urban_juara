@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/menu_home"
-        android:name="com.kakapo.kotlin.urbanjuara.fragment.home.HomeFragment"
+        android:name="com.kakapo.kotlin.urbanjuara.ui.fragment.home.HomeFragment"
         android:label="home_fragment"
         tools:layout="@layout/home_fragment" />
     <fragment
         android:id="@+id/menu_profile"
-        android:name="com.kakapo.kotlin.urbanjuara.fragment.profile.ProfileFragment"
+        android:name="com.kakapo.kotlin.urbanjuara.ui.fragment.profile.ProfileFragment"
         android:label="profile_fragment"
         tools:layout="@layout/profile_fragment" />
     <fragment
         android:id="@+id/menu_riwayat"
-        android:name="com.kakapo.kotlin.urbanjuara.fragment.riwayat.RiwayatFragment"
+        android:name="com.kakapo.kotlin.urbanjuara.ui.fragment.riwayat.RiwayatFragment"
         android:label="riwayat_fragment"
         tools:layout="@layout/riwayat_fragment" />
 </navigation>

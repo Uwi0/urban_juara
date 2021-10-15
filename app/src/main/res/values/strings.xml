@@ -49,6 +49,23 @@
     <string name="ojek_5km">Ojek 5 KM</string>
     <string name="ojek_10km">Ojek 10 KM</string>
     <string name="text_poin">poin</string>
-    <string name="poin_ojek">50</string>
+    <string name="poin_ojek50">50</string>
+    <string name="poin_ojek100">100</string>
     <string name="tukar_poin_dengan">Tukar Poin dengan</string>
+    <string name="anda_menukar_point">Anda Menukar Point Dengan</string>
+    <string name="nama_barang">Nama Barang</string>
+    <string name="jumlah_point">Jumlah Poin</string>
+    <string name="tukar_point">Tukar Poin</string>
+    <string name="kenali">Kenali</string>
+    <string name="sampahmu">Sampahmu</string>
+    <string name="sampah_yang_dapat_ditukar">Sampah yang dapat ditukar di Bank Sampah Urban Juara sebagai berikut :</string>
+    <string name="sampah_plastik">Sampah\nPlastik</string>
+    <string name="sampah_kertas">Sampah\nKertas</string>
+    <string name="sampah_pecah_belah">Sampah\nPecah Belah</string>
+    <string name="sampah_organik">Sampah\nOrganik</string>
+    <string name="sampah_kardus">Sampah\nKardus</string>
+    <string name="sampah_kaleng">Sampah\nKaleng</string>
+    <string name="sampah_b3">Sampah\nB3</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="ubah_pengaturan">Ubah Pengaturan</string>
 </resources>
