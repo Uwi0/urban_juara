@@ -34,7 +34,7 @@
     <string name="berlaku">Berlaku Sampai</string>
     <string name="home_point">1100</string>
     <string name="tukar_poin">Tukar Point</string>
-    <string name="lokasi_bank">Lokasi Bank Sampah</string>
+    <string name="lokasi_bank">Lokasi Bank</string>
     <string name="kenali_sampah">Kenali Sampah</string>
     <string name="website">Website</string>
     <string name="tukar_point_mu_dengan">Tukar Pointmu Dengan</string>
@@ -68,4 +68,8 @@
     <string name="sampah_b3">Sampah\nB3</string>
     <string name="pengaturan">Pengaturan</string>
     <string name="ubah_pengaturan">Ubah Pengaturan</string>
+    <string name="membuat_profile">Membuat Profile</string>
+    <string name="laki_laki">Laki Laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="simpan">Simpan</string>
 </resources>

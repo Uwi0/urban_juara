@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.home.HomeFragment">
+    tools:context=".presentation.ui.fragment.home.HomeFragment">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -135,14 +135,15 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <ImageButton
-                android:layout_width="64dp"
-                android:layout_height="85dp"
+                android:id="@+id/btn_img_tukar_point"
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
                 android:src="@drawable/ic_bg_tukar"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -156,14 +157,15 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <ImageButton
-                android:layout_width="64dp"
-                android:layout_height="85dp"
+                android:id="@+id/btn_img_lokasi_bank"
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
                 android:src="@drawable/ic_bg_lokasi_sampah"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -171,6 +173,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:backgroundTint="@android:color/transparent"
                 android:text="@string/lokasi_bank" />
 
@@ -178,14 +181,15 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <ImageButton
-                android:layout_width="64dp"
-                android:layout_height="85dp"
+                android:id="@+id/btn_img_kenali_sampah"
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
                 android:src="@drawable/ic_bg_sampah"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -193,20 +197,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:text="@string/kenali_sampah" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <ImageButton
-                android:layout_width="64dp"
-                android:layout_height="85dp"
+                android:id="@+id/btn_img_website"
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
                 android:src="@drawable/ic_bg_web"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -215,6 +221,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@android:color/transparent"
+                android:textAlignment="center"
                 android:text="@string/website" />
 
         </LinearLayout>

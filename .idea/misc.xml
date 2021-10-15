@@ -6,6 +6,7 @@
         <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/drawable/bg_card.xml" value="0.22407407407407406" />
         <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/drawable/ic_bg_tukar.xml" value="0.28615384615384615" />
         <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/drawable/ic_home.xml" value="0.28615384615384615" />
+        <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/drawable/ic_pilih_avatar.xml" value="0.24473684210526317" />
         <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/drawable/ic_point_keluar.xml" value="0.15989583333333332" />
         <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/font/poppins.xml" value="0.22870370370370371" />
         <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/layout/activity_daftar.xml" value="0.264" />
@@ -16,7 +17,8 @@
         <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/layout/item_point_keluar.xml" value="0.27447916666666666" />
         <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/layout/item_point_masuk.xml" value="0.25" />
         <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/layout/item_tukar_poin_ojek.xml" value="0.23114035087719298" />
-        <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/layout/jenis_sampah_fragment.xml" value="0.4" />
+        <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/layout/jenis_sampah_fragment.xml" value="0.264" />
+        <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/layout/new_profile_fragment.xml" value="0.23114035087719298" />
         <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/layout/pengaturan_fragment.xml" value="0.4" />
         <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/layout/profile_fragment.xml" value="0.176" />
         <entry key="..\:/Document/proyek/Urban Juara/app/src/main/res/layout/riwayat_fragment.xml" value="0.27447916666666666" />

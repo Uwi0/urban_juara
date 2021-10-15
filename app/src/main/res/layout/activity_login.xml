@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.LoginActivity">
+    tools:context=".presentation.ui.LoginActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/inputTxtUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
@@ -32,38 +32,38 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:paddingStart="20dp"
-        android:text="Name"
+        android:hint="@string/user_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/inputTxtPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="54dp"
         android:background="@drawable/ic_bg_textfield"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:minHeight="48dp"
         android:paddingStart="20dp"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        android:hint="@string/password"
+        app:layout_constraintEnd_toEndOf="@+id/inputTxtUsername"
+        app:layout_constraintStart_toStartOf="@+id/inputTxtUsername"
+        app:layout_constraintTop_toBottomOf="@+id/inputTxtUsername" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:backgroundTint="@color/flush_orang"
         android:text="@string/masuk"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="@+id/inputTxtPassword"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintStart_toStartOf="@+id/inputTxtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/inputTxtPassword" />
 
     <TextView
         android:id="@+id/textView2"
@@ -85,8 +85,8 @@
         android:fontFamily="@font/poppins"
         android:text="@string/password"
         android:textColor="@color/flush_orang"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintStart_toStartOf="@+id/inputTxtUsername"
+        app:layout_constraintTop_toBottomOf="@+id/inputTxtUsername" />
 
     <TextView
         android:id="@+id/textView4"
@@ -96,8 +96,8 @@
         android:fontFamily="@font/poppins"
         android:text="@string/lupa_password"
         android:textColor="@color/flush_orang"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
     <TextView
         android:id="@+id/textView5"
@@ -106,8 +106,8 @@
         android:layout_marginTop="36dp"
         android:text="@string/pengguna_baru"
         android:textColor="@color/flush_orang"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageView

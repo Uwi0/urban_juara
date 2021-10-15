@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.tukar_point_ojek.TukarPoinOjekFragment">
+    tools:context=".presentation.ui.fragment.tukar_point_ojek.TukarPoinOjekFragment">
 
 
     <androidx.cardview.widget.CardView

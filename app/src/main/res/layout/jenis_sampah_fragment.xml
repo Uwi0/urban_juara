@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragment.jenis_sampah.JenisSampahFragment">
+    tools:context=".presentation.ui.fragment.jenis_sampah.JenisSampahFragment">
 
     <ImageView
         android:id="@+id/imageView7"
@@ -65,9 +65,9 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
-        android:layout_height="130dp"
+        android:layout_height="@dimen/button_icon_container_height"
         android:layout_marginTop="24dp"
-        android:gravity="center"
+        android:gravity=""
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -82,10 +82,10 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:layout_width="64dp"
-                android:layout_height="85dp"
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
-                android:src="@drawable/ic_bg_tukar"
+                android:src="@drawable/ic_sp_plastik"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
@@ -104,60 +104,63 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:layout_width="64dp"
-                android:layout_height="85dp"
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
-                android:src="@drawable/ic_bg_lokasi_sampah"
+                android:src="@drawable/ic_jenis_sampah_kertas"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@android:color/transparent"
-                android:text="@string/lokasi_bank" />
+                android:textAlignment="center"
+                android:text="@string/sampah_kertas" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <ImageButton
-                android:layout_width="64dp"
-                android:layout_height="85dp"
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
-                android:src="@drawable/ic_bg_sampah"
+                android:src="@drawable/ic_jenis_sampah_peca_belah"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/kenali_sampah" />
+                android:textAlignment="center"
+                android:text="@string/sampah_pecah_belah" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <ImageButton
-                android:layout_width="64dp"
-                android:layout_height="85dp"
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
-                android:src="@drawable/ic_bg_web"
+                android:src="@drawable/ic_jenis_sampah_organik"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@android:color/transparent"
-                android:text="@string/website" />
+                android:textAlignment="center"
+                android:text="@string/sampah_organik" />
 
         </LinearLayout>
 
@@ -165,11 +168,89 @@
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="437dp"
-        android:layout_marginTop="24dp"
+        android:layout_height="@dimen/button_icon_container_height"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_jenis_sampah_kardus"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/sampah_kardus" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_jenis_sampah_kaleng"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:textAlignment="center"
+                android:text="@string/sampah_kardus" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_jenis_sampah_b3"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/sampah_b3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
