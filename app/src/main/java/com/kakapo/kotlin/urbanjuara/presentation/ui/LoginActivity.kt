@@ -9,22 +9,40 @@ import com.kakapo.kotlin.urbanjuara.presentation.ui.main.MainActivity
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
+    private lateinit var username: String
+    private lateinit var password: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        buttonLoginClick()
+
+        username = binding.inputTxtUsername.text.toString()
+        password = binding.inputTxtPassword.text.toString()
+
+        buttonLoginOnClick()
+        buttonDaftarOnClick()
     }
 
-    private fun goToMain(){
+    private fun goToMainActivity(){
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 
-    private fun buttonLoginClick(){
+    private fun gotoDaftarActivity(){
+        val intent = Intent(this, DaftarActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun buttonLoginOnClick(){
         binding.btnLogin.setOnClickListener{
-            goToMain()
+            goToMainActivity()
+        }
+    }
+
+    private fun buttonDaftarOnClick(){
+        binding.btnDaftar.setOnClickListener {
+            gotoDaftarActivity()
         }
     }
 }

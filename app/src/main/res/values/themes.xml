@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.UrbanJuara.noActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.UrbanJuara.noActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor" tools:targetApi="l">@color/flush_orang</item>
     </style>
 </resources>

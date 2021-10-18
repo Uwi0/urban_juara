@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_navigation"
+    app:startDestination="@id/daftarFragment">
+
+    <fragment
+        android:id="@+id/verifikasiFragment"
+        android:name="com.kakapo.kotlin.urbanjuara.presentation.ui.fragment.verifikasi.VerifikasiFragment"
+        android:label="verifikasi_fragment"
+        tools:layout="@layout/verifikasi_fragment" >
+        <action
+            android:id="@+id/action_verifikasiFragment"
+            app:destination="@id/newProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newProfileFragment"
+        android:name="com.kakapo.kotlin.urbanjuara.presentation.ui.fragment.new_profile.NewProfileFragment"
+        android:label="new_profile_fragment"
+        tools:layout="@layout/new_profile_fragment" />
+    <fragment
+        android:id="@+id/daftarFragment"
+        android:name="com.kakapo.kotlin.urbanjuara.presentation.ui.fragment.daftar.DaftarFragment"
+        android:label="daftar_fragment"
+        tools:layout="@layout/daftar_fragment" >
+        <action
+            android:id="@+id/action_daftarFragment"
+            app:destination="@id/verifikasiFragment" />
+    </fragment>
+</navigation>

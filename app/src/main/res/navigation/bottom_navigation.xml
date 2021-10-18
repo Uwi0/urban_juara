@@ -9,7 +9,14 @@
         android:id="@+id/menu_home"
         android:name="com.kakapo.kotlin.urbanjuara.presentation.ui.fragment.home.HomeFragment"
         android:label="home_fragment"
-        tools:layout="@layout/home_fragment" />
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_menu_home_to_lokasiBankFragment"
+            app:destination="@id/lokasiBankFragment" />
+        <action
+            android:id="@+id/action_menu_home_to_jenisSampahFragment"
+            app:destination="@id/jenisSampahFragment" />
+    </fragment>
     <fragment
         android:id="@+id/menu_profile"
         android:name="com.kakapo.kotlin.urbanjuara.presentation.ui.fragment.profile.ProfileFragment"
@@ -20,4 +27,14 @@
         android:name="com.kakapo.kotlin.urbanjuara.presentation.ui.fragment.riwayat.RiwayatFragment"
         android:label="riwayat_fragment"
         tools:layout="@layout/riwayat_fragment" />
+    <fragment
+        android:id="@+id/lokasiBankFragment"
+        android:name="com.kakapo.kotlin.urbanjuara.presentation.ui.fragment.lokasi_bank_sampah.LokasiBankFragment"
+        android:label="lokasi_bank_fragment"
+        tools:layout="@layout/lokasi_bank_fragment" />
+    <fragment
+        android:id="@+id/jenisSampahFragment"
+        android:name="com.kakapo.kotlin.urbanjuara.presentation.ui.fragment.jenis_sampah.JenisSampahFragment"
+        android:label="jenis_sampah_fragment"
+        tools:layout="@layout/jenis_sampah_fragment" />
 </navigation>

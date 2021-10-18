@@ -6,7 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.kakapo.kotlin.urbanjuara.R
+import com.kakapo.kotlin.urbanjuara.databinding.VerifikasiFragmentBinding
 
 class VerifikasiFragment : Fragment() {
 
@@ -15,11 +17,13 @@ class VerifikasiFragment : Fragment() {
     }
 
     private lateinit var viewModel: VerifikasiViewModel
+    private lateinit var binding: VerifikasiFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        binding = VerifikasiFragmentBinding.inflate(inflater, container, false)
         return inflater.inflate(R.layout.verifikasi_fragment, container, false)
     }
 
@@ -27,6 +31,21 @@ class VerifikasiFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(VerifikasiViewModel::class.java)
         // TODO: Use the ViewModel
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        buttonLanjutkanOnClick()
+    }
+
+    private fun buttonLanjutkanOnClick(){
+        binding.btnLanjutkan.setOnClickListener {
+            goToFragmentNewProfile(it)
+        }
+    }
+
+    private fun goToFragmentNewProfile(view: View){
+        Navigation.findNavController(view).navigate(R.id.action_verifikasiFragment)
     }
 
 }
