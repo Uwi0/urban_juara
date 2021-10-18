@@ -55,6 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="@string/nama_depan"
+            android:textColor="@color/flush_orang"
             app:layout_constraintStart_toStartOf="@+id/textView41"
             app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
@@ -65,9 +66,9 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
             android:ems="10"
+            android:hint="@string/nama_depan"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="Name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView42"
             app:layout_constraintTop_toBottomOf="@+id/textView42" />
@@ -77,7 +78,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="TextView"
+            android:text="@string/nama_belakang"
+            android:textColor="@color/flush_orang"
             app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
@@ -88,9 +90,9 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
             android:ems="10"
+            android:hint="@string/nama_belakang"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="Name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView43"
             app:layout_constraintTop_toBottomOf="@+id/textView43" />
@@ -100,7 +102,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="TextView"
+            android:text="@string/email"
+            android:textColor="@color/flush_orang"
             app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
@@ -112,9 +115,9 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
             android:ems="10"
+            android:hint="@string/email"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="Name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView44" />
@@ -124,7 +127,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="29dp"
-            android:text="TextView"
+            android:text="@string/jenis_kelamin"
+            android:textColor="@color/flush_orang"
             app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName16"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName16" />
 
@@ -141,13 +145,13 @@
                 android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="@string/laki_laki" />
 
             <RadioButton
                 android:id="@+id/radioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="@string/perempuan" />
         </RadioGroup>
 
         <Button
