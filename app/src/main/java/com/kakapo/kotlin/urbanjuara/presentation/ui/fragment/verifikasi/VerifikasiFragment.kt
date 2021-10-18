@@ -24,7 +24,7 @@ class VerifikasiFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = VerifikasiFragmentBinding.inflate(inflater, container, false)
-        return inflater.inflate(R.layout.verifikasi_fragment, container, false)
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -38,14 +38,15 @@ class VerifikasiFragment : Fragment() {
         buttonLanjutkanOnClick()
     }
 
-    private fun buttonLanjutkanOnClick(){
+    private fun buttonLanjutkanOnClick() {
         binding.btnLanjutkan.setOnClickListener {
             goToFragmentNewProfile(it)
         }
     }
 
-    private fun goToFragmentNewProfile(view: View){
-        Navigation.findNavController(view).navigate(R.id.action_verifikasiFragment)
+    private fun goToFragmentNewProfile(view: View) {
+        Navigation.findNavController(view)
+            .navigate(R.id.action_verifikasiFragment_to_newProfileFragment)
     }
 
 }

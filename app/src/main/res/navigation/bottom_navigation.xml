@@ -36,5 +36,14 @@
         android:id="@+id/jenisSampahFragment"
         android:name="com.kakapo.kotlin.urbanjuara.presentation.ui.fragment.jenis_sampah.JenisSampahFragment"
         android:label="jenis_sampah_fragment"
-        tools:layout="@layout/jenis_sampah_fragment" />
+        tools:layout="@layout/jenis_sampah_fragment" >
+        <action
+            android:id="@+id/action_jenisSampahFragment_to_jenisSampahDetailFragment"
+            app:destination="@id/jenisSampahDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jenisSampahDetailFragment"
+        android:name="com.kakapo.kotlin.urbanjuara.presentation.ui.jenis_sampah_detail.JenisSampahDetailFragment"
+        android:label="jenis_sampah_detail_fragment"
+        tools:layout="@layout/jenis_sampah_detail_fragment" />
 </navigation>

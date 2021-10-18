@@ -77,4 +77,13 @@
     <string name="tidak_menerima_kode">Tidak Menerima Kode? kirimg ulang</string>
     <string name="lokasi">Lokasi</string>
     <string name="bank_sampah">Bank sampah</string>
+    <string name="botol_plastik">Botol Plastik</string>
+    <string name="kantong_plastik">Kantong Plastik</string>
+    <string name="gelas_plastik">Gelas Plastik</string>
+    <string name="mika_makanan">Mika Makanan</string>
+    <string name="alat_dapur">Alat Dapur Plastik</string>
+    <string name="kantong_makanan">Kantong Makanan</string>
+    <string name="tutup_botol">Tutup Botol</string>
+    <string name="mainan_plastik">Mainan Plastik</string>
+    <string name="sampah_plstik_detail">Sampah Plastik</string>
 </resources>

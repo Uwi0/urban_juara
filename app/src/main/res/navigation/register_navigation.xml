@@ -11,7 +11,7 @@
         android:label="verifikasi_fragment"
         tools:layout="@layout/verifikasi_fragment" >
         <action
-            android:id="@+id/action_verifikasiFragment"
+            android:id="@+id/action_verifikasiFragment_to_newProfileFragment"
             app:destination="@id/newProfileFragment" />
     </fragment>
     <fragment

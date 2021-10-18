@@ -82,6 +82,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btn_sampah_plastik"
                 android:layout_width="@dimen/icon_button_size"
                 android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
@@ -104,6 +105,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btn_sampah_kertas"
                 android:layout_width="@dimen/icon_button_size"
                 android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
@@ -127,6 +129,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btn_sampah_pecah_belah"
                 android:layout_width="@dimen/icon_button_size"
                 android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
@@ -149,6 +152,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btn_sampah_organik"
                 android:layout_width="@dimen/icon_button_size"
                 android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
@@ -182,6 +186,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btn_sampah_kardus"
                 android:layout_width="@dimen/icon_button_size"
                 android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
@@ -204,6 +209,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btn_sampah_kaleng"
                 android:layout_width="@dimen/icon_button_size"
                 android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
@@ -215,7 +221,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@android:color/transparent"
                 android:textAlignment="center"
-                android:text="@string/sampah_kardus" />
+                android:text="@string/sampah_kaleng" />
 
         </LinearLayout>
 
@@ -227,6 +233,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/btn_sampah_b3"
                 android:layout_width="@dimen/icon_button_size"
                 android:layout_height="@dimen/icon_button_size"
                 android:backgroundTint="@android:color/transparent"
