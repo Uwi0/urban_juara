@@ -13,8 +13,8 @@ class JenisSampahViewModel @Inject constructor(
     private val getTrashTypeUseCase: GetTrashTypes,
 ) : ViewModel() {
 
-    private val _state = MutableLiveData<TrashTypeListState>()
-    val state: LiveData<TrashTypeListState> = _state
+    private val _state = MutableLiveData<TrashTypState>()
+    val state: LiveData<TrashTypState> = _state
 
     init {
         getTrashTypes()
@@ -24,13 +24,13 @@ class JenisSampahViewModel @Inject constructor(
         getTrashTypeUseCase().onEach { result ->
             when (result) {
                 is Resource.Success -> {
-                    _state.value = TrashTypeListState(trashTypes = result.data ?: emptyList())
+                    _state.value = TrashTypState(trashTypes = result.data)
                 }
                 is Resource.Error -> {
-                    _state.value = TrashTypeListState(error = result.message ?: "An unexpected error")
+                    _state.value = TrashTypState(error = result.message ?: "An unexpected error")
                 }
                 is Resource.Loading ->{
-                    _state.value = TrashTypeListState(isLoading = true)
+                    _state.value = TrashTypState(isLoading = true)
                 }
             }
         }.launchIn(viewModelScope)

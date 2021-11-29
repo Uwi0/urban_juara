@@ -10,12 +10,13 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
 import com.kakapo.kotlin.urbanjuara.R
 import com.kakapo.kotlin.urbanjuara.databinding.JenisSampahFragmentBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class JenisSampahFragment : Fragment() {
 
     private val viewModel by viewModels<JenisSampahViewModel>()
     private lateinit var binding: JenisSampahFragmentBinding
-    private var state: TrashTypeListState? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,13 +28,13 @@ class JenisSampahFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        val state = viewModel.state.value
+        Log.i("result", state.toString())
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val state = viewModel.state.value
-        Log.i("result", state.toString())
         buttonSampahPlastikOnClick()
         buttonSampahKertasOnClick()
         buttonSampahPecahbelahOnClick()

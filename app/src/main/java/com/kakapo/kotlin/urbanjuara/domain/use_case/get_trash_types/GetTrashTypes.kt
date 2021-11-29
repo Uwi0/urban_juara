@@ -13,15 +13,15 @@ import javax.inject.Inject
 class GetTrashTypes @Inject constructor(
     private val repository: UrbanJuaraRepository
 ) {
-    operator fun invoke(): Flow<Resource<List<TrashType>>> = flow {
+    operator fun invoke(): Flow<Resource<TrashType>> = flow {
         try {
-            emit(Resource.Loading<List<TrashType>>())
-            val trashTypes = repository.getTrashType().map { it.toTrashType() }
-            emit(Resource.Success<List<TrashType>>(trashTypes))
+            emit(Resource.Loading<TrashType>())
+            val trashTypes = repository.getTrashType().toTrashType()
+            emit(Resource.Success<TrashType>(trashTypes))
         }catch (e: HttpException){
-            emit(Resource.Error<List<TrashType>>(e.localizedMessage ?: "An unexpected error occurred"))
+            emit(Resource.Error<TrashType>(e.localizedMessage ?: "An unexpected error occurred"))
         }catch (e: IOException){
-            emit(Resource.Error<List<TrashType>>("Couldn't reach server. check your internet connection"))
+            emit(Resource.Error<TrashType>("Couldn't reach server. check your internet connection"))
         }
     }
 }

@@ -9,7 +9,7 @@ class UrbanJuaraRepositoryImpl @Inject constructor(
     private val api: UrbanJuaraApi
 ) : UrbanJuaraRepository {
 
-    override suspend fun getTrashType(): List<TrashTypeDto> {
+    override suspend fun getTrashType(): TrashTypeDto {
         return api.getTrashType()
     }
 

@@ -2,7 +2,7 @@ package com.kakapo.kotlin.urbanjuara.data.remote.dto
 
 data class Data(
     val current_page: Int,
-    val `data`: List<TrashTypeDto>,
+    val `data`: List<DataX>,
     val first_page_url: String,
     val from: Int,
     val last_page: Int,
