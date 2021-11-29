@@ -43,7 +43,21 @@
     </fragment>
     <fragment
         android:id="@+id/jenisSampahDetailFragment"
-        android:name="com.kakapo.kotlin.urbanjuara.presentation.ui.jenis_sampah_detail.JenisSampahDetailFragment"
+        android:name="com.kakapo.kotlin.urbanjuara.presentation.ui.fragment.jenis_sampah_detail.JenisSampahDetailFragment"
         android:label="jenis_sampah_detail_fragment"
         tools:layout="@layout/jenis_sampah_detail_fragment" />
+    <fragment
+        android:id="@+id/menu_settings"
+        android:name="com.kakapo.kotlin.urbanjuara.presentation.ui.fragment.menu_fragment.MenuFragment"
+        android:label="menu_fragment"
+        tools:layout="@layout/menu_fragment" >
+        <action
+            android:id="@+id/action_to_pengaturanFragment"
+            app:destination="@id/pengaturanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pengaturanFragment"
+        android:name="com.kakapo.kotlin.urbanjuara.presentation.ui.fragment.pengaturan.PengaturanFragment"
+        android:label="pengaturan_fragment"
+        tools:layout="@layout/pengaturan_fragment" />
 </navigation>

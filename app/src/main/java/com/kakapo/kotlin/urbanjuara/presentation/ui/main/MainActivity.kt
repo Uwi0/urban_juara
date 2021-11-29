@@ -21,4 +21,8 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host)
         navView.setupWithNavController(navController)
     }
+
+    fun closeApp(){
+        this.finishAffinity()
+    }
 }

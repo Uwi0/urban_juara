@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_verifikasiFragment_to_newProfileFragment"
             app:destination="@id/newProfileFragment" />
+        <action
+            android:id="@+id/action_to_daftarFragment"
+            app:destination="@id/daftarFragment" />
     </fragment>
     <fragment
         android:id="@+id/newProfileFragment"

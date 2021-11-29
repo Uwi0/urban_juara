@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.ui.jenis_sampah_detail.JenisSampahDetailFragment">
+    tools:context=".presentation.ui.fragment.jenis_sampah_detail.JenisSampahDetailFragment">
 
 
     <ImageView

@@ -87,4 +87,9 @@
     <string name="mainan_plastik">Mainan Plastik</string>
     <string name="sampah_plstik_detail">Sampah Plastik</string>
     <string name="cari_kecamatan">Cari Kecamatan</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="urban_juara_app">Urban Juara App</string>
+    <string name="tentang">Tentang</string>
+    <string name="keluar">Keluar</string>
 </resources>

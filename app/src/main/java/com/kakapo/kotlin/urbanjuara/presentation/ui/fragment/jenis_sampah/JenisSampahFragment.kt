@@ -1,24 +1,21 @@
 package com.kakapo.kotlin.urbanjuara.presentation.ui.fragment.jenis_sampah
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
+import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
 import com.kakapo.kotlin.urbanjuara.R
 import com.kakapo.kotlin.urbanjuara.databinding.JenisSampahFragmentBinding
 
 class JenisSampahFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = JenisSampahFragment()
-    }
-
-    private lateinit var viewModel: JenisSampahViewModel
+    private val viewModel by viewModels<JenisSampahViewModel>()
     private lateinit var binding: JenisSampahFragmentBinding
+    private var state: TrashTypeListState? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,12 +27,13 @@ class JenisSampahFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(JenisSampahViewModel::class.java)
-        // TODO: Use the ViewModel
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val state = viewModel.state.value
+        Log.i("result", state.toString())
         buttonSampahPlastikOnClick()
         buttonSampahKertasOnClick()
         buttonSampahPecahbelahOnClick()

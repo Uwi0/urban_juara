@@ -58,7 +58,6 @@
         android:background="@drawable/ic_bg_textfield"
         android:ems="10"
         android:hint="@string/cari_kecamatan"
-        android:hintTextColor="#A1887F"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:paddingStart="20dp"

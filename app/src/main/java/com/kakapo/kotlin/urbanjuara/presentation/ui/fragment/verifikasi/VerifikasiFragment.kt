@@ -36,6 +36,7 @@ class VerifikasiFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         buttonLanjutkanOnClick()
+        btnBackOnClick()
     }
 
     private fun buttonLanjutkanOnClick() {
@@ -47,6 +48,16 @@ class VerifikasiFragment : Fragment() {
     private fun goToFragmentNewProfile(view: View) {
         Navigation.findNavController(view)
             .navigate(R.id.action_verifikasiFragment_to_newProfileFragment)
+    }
+
+    private fun btnBackOnClick(){
+        binding.btnBack.setOnClickListener {
+            backToDaftarFragment(it)
+        }
+    }
+
+    private fun backToDaftarFragment(view: View){
+        requireActivity().onBackPressed()
     }
 
 }

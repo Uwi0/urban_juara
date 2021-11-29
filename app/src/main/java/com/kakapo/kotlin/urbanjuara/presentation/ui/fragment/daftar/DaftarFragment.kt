@@ -33,14 +33,22 @@ class DaftarFragment : Fragment() {
         // TODO: Use the ViewModel
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         buttonDaftarOnClick()
+        btnBackOnClick()
     }
 
     private fun buttonDaftarOnClick(){
         binding.btnDaftar.setOnClickListener {
             goToFragmentVerifikasi(it)
+        }
+    }
+
+    private fun btnBackOnClick(){
+        binding.btnBack.setOnClickListener {
+            requireActivity().onBackPressed()
         }
     }
 

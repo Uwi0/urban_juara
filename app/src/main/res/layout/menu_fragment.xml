@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.fragment.menu_fragment.MenuFragment">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="0dp"
+        android:layout_height="184dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_card_home_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/urban_juara_app"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/btnPengaturan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:height="45dp"
+        android:backgroundTint="@color/flush_orang"
+        android:text="@string/pengaturan"
+        android:textAlignment="textStart"
+        app:icon="@drawable/ic_fragment_menu_pengaturan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/btnTentang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:height="45dp"
+        android:backgroundTint="@color/flush_orang"
+        android:text="@string/tentang"
+        android:textAlignment="textStart"
+        app:icon="@drawable/ic_fragment_menu_tentang"
+        app:layout_constraintEnd_toEndOf="@+id/btnPengaturan"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnPengaturan"
+        app:layout_constraintTop_toBottomOf="@+id/btnPengaturan" />
+
+    <Button
+        android:id="@+id/btnKeluar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:height="45dp"
+        android:backgroundTint="@color/flush_orang"
+        android:text="@string/keluar"
+        android:textAlignment="textStart"
+        app:icon="@drawable/ic_fragment_menu_keluar"
+        app:layout_constraintEnd_toEndOf="@+id/btnTentang"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnTentang"
+        app:layout_constraintTop_toBottomOf="@+id/btnTentang" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
